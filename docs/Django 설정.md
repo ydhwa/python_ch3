@@ -1,3 +1,13 @@
+# 환경설정
+## Version
+- Python 3.7.3
+## Library
+- django
+- psychpg2
+   - 2.8.x
+
+---
+
 # postgresql에 db 생성 및 계정 생성 접근 권한 부여
 
 ## 1. 새로운 데이터베이스 생성
