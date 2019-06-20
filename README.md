@@ -8,6 +8,10 @@
 
 ---
 
+> 기본적으로 Django 프로젝트 한 개 당 한 개의 DB를 사용한다.
+>
+> Django 프로젝트에는 기본적으로 관리 프로그램이 내장되기 때문이다. 
+
 # postgresql에 db 생성 및 계정 생성 접근 권한 부여
 
 ## 1. 새로운 데이터베이스 생성
@@ -91,6 +95,10 @@ TEMPLATES = [
 ### [터미널]
 `python manage.py migrate`
 
+Django 어플리케이션과 물리적인 데이터베이스를 동기화 시키는 작업이다.
+
+문제가 많이 발생하는 부분이다.
+
 ## 8. Django 프로젝트의 기본 관리 어플리케이션 로그인 계정 생성 (=관리 계정 생성하기)
 ### [터미널]
 `python manage.py createsuperuser`
@@ -102,22 +110,8 @@ TEMPLATES = [
 ---
 
 # Appliation 작업
+## 생성한 어플리케이션 모음
+- helloworld
+- emaillist
 
-## 1. helloworld 어플리케이션 추가
-### [터미널]
-`python manage.py startapp helloworld`
-
-## 2. 어플리케이션 등록 (settings.py)
-```python
-# Application definition
-
-INSTALLED_APPS = [
-    'helloworld',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-]
-```
+`/docs` 안에 있다.
