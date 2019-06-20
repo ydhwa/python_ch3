@@ -13,7 +13,6 @@
 > Django 프로젝트에는 기본적으로 관리 프로그램이 내장되기 때문이다. 
 
 # postgresql에 db 생성 및 계정 생성 접근 권한 부여
-
 ## 1. 새로운 데이터베이스 생성
 `create database djdb;`
 
@@ -30,7 +29,6 @@
 ---
 
 # Pycharm(community)에서 Django 프로젝트 시작하기
-
 ## 1. pycharm 프로젝트 생성(python_ch3 프로젝트)
 
 ## 2. Django 설치
@@ -74,24 +72,16 @@ DATABASES = {
 ```python
 TEMPLATES = [
     {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        ...
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
+        ...
     },
 ]
 ```
 
 설정 후 python_ch3 프로젝트 바로 아래에 templates 디렉터리를 생성한다.
 
-## 7. Django 프로젝트의 기본 관리 어플리케이션이 사용하는 테이블
+## 7. Django 프로젝트의 기본 관리 어플리케이션이 사용하는 테이블을 생성
 ### [터미널]
 `python manage.py migrate`
 
@@ -99,11 +89,11 @@ Django 어플리케이션과 물리적인 데이터베이스를 동기화 시키
 
 문제가 많이 발생하는 부분이다.
 
-## 8. Django 프로젝트의 기본 관리 어플리케이션 로그인 계정 생성 (=관리 계정 생성하기)
+## 8. Django 프로젝트의 기본 관리 어플리케이션 로그인 계정 생성 (=관리 계정 생성)
 ### [터미널]
 `python manage.py createsuperuser`
 
-## 9. 지금까지 작업 내용 확인하기
+## 9. 지금까지 작업 내용 확인
 ### [터미널]
 `python manage.py runserver 0.0.0.0:8888`
 
