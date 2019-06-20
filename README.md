@@ -104,4 +104,4 @@ Django 어플리케이션과 물리적인 데이터베이스를 동기화 시키
 - helloworld
 - emaillist
 
-`/docs` 안에 있다.
+생성 방법에 대한 설명은 `/docs` 안에 있다.
