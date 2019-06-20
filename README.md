@@ -22,7 +22,7 @@
 `create user djdb with password 'djdb';`
 
 ## 3. 테이블에 대한 권한 추가
-`grant all privilieges on all tables in schema public to djdb;`
+`grant all privileges on all tables in schema public to djdb;`
 
 ## 4. `data/pg_hba.conf` 접근 설정
 
