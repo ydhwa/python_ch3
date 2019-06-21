@@ -28,5 +28,9 @@ urlpatterns = [
     path('helloworld/hello2/<int:id>', helloworld_views.hello2),
     path('helloworld/hello3', helloworld_views.hello3),
 
+    path('helloworld/counter/add', helloworld_views.counter_add),
+    path('helloworld/counter/max', helloworld_views.counter_max),
+    path('helloworld/counter/update', helloworld_views.counter_update),
+
     path('admin/', admin.site.urls),
 ]
